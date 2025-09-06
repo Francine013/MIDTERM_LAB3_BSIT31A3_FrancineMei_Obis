@@ -4,12 +4,12 @@ using StudentMvcApp.Services;
 
 namespace StudentMvcApp.Web.Controllers
 {
-    [Route("Student")]
-    public class StudentController : Controller
+    [Route("Students")]
+    public class StudentsController : Controller
     {
         private readonly IStudentService _studentService;
 
-        public StudentController(IStudentService studentService)
+        public StudentsController(IStudentService studentService)
         {
             _studentService = studentService;
         }
